@@ -12,6 +12,7 @@
 1. Multi Layer Perceptron (MLP)
 
 A MLP has at least 3 layers: input, hidden, output. A layer is a collection of neurons which are nodes that transform information. Each neuron in a layer connects to all neurons in the next layer. However, neurons within each layer **do not** communicate with each other. MLPs are a class of FNNs.
+![Multilayer Perceptron](/assets/mlp.png)
 
 2. Convolutional Neural Network (CNN)
 
