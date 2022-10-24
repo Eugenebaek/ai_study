@@ -91,9 +91,9 @@ Currently, most NLP tasks rely on annotated data. Because of the abundance of un
 	
 	Parsing is assigning a structure to a string. 
 
-	**Constituency Parsing** is when we assign a syntactical structure to a sentence. 
+	*Constituency Parsing* is when we assign a syntactical structure to a sentence. 
 
-	**Dependency Parsing** is when we show the structural relationship between words in a sentence. 
+	*Dependency Parsing* is when we show the structural relationship between words in a sentence. 
 
 3. Semantic Role Labeling (SRL)
 
@@ -107,5 +107,50 @@ Currently, most NLP tasks rely on annotated data. Because of the abundance of un
 
 	Identifying structured information from unstructured data.
 
-	1. Named Entity Recognition
+1. Named Entity Recognition (NER)
+
+	Locates and categorizes entities into pre-defined categories of names such as names of people and places.
+
+2. Relation Extraction
+
+	Finds semantic relationships between entity pairs. 
+
+3. Coreference Resolution
+
+	Identifies text in a context that refer to the same entity. For instance, the mentions "car", "Camry," and "it" could all refer to the same entity. 
+
+4. Event Extraction
+
+	Extracting specific information from text after a trigger such as a trigger word. 
+
+### D. Sentiment Analysis
+
+	The goal of sentiment analysis is to extract subjective information (opinion/sentiment) from text by contextual mining.
+
+1. Document-level Sentiment Analysis
+
+	Determines whether the whole document reflects a positive or negative sentiment.
+
+2. Sentence-level Sentiment Analysis
+	
+	Determines whether the opinion expressed in a sentence is positive, negative, or neutral.
+
+3. Aspect-level Sentiment Analysis
+
+	Determines the sentiment of a particular target. Aspect-level sentiment analysis involves *Aspect Sentiment Classification* (opinion on different aspects) and *Aspect Extraction* (identifies the target aspect for evaluation).
+
+	Ex. "This car is old. It must be repaired and sold!". "This car" is what is subject to evaluation and must be extracted first. Here, the opinion about this aspect is negative.
+
+### E. Machine Translation
+
+	
+
+
+
+
+
+
+
+
+
 
