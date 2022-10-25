@@ -143,14 +143,67 @@ Currently, most NLP tasks rely on annotated data. Because of the abundance of un
 
 ### E. Machine Translation
 
+
+### F. Question Answering (QA)
+
+	QA is a version of Information Retrieval (IR) which is the extraction of information from a set of documents. In QA, we require specific answers which is infered from the available documents. 
+
+1. Rule-based Question Answering
 	
+	Ex. Baseball system was one of the earliest works in QA. It consisted of (1) question read-in, (2) dictionary lookup for words in question, (3) syntactic (POS) analysis of the words in question, (4) content analysis for extracting the input question, and (5) estimating relevance regarding the input question.
 
+2. Question Answering in the Era of Deep Learning
 
+	Common examples of QA systems are Siri, Google, Alexa, etc.
 
+3. Visual Question Answering (VQA)
 
+	VQA is the answering of natural language questions (object detection, image segmentation, sentiment analysis, etc.) about a given input image. 
 
+### G. Document Summarization
 
+	Generate summary sentences given documents as input.
 
+1. Extractive Summarization
 
+	Identifies the most important sentences and returns them as the summary. This method is prone to generating long and overlapping summary sentences but does capture the author's intention/expression. 
 
+2. Abstractive Summarization
 
+	Generate summary sentences from scratch. This method is hard to train but can generate a shorter/succinct summary.
+
+### H. Dialogue Systems
+
+	Dialogue systems are intelligent conversational machines that are used in areas such as automated customer service. 
+
+1. Task-based System
+
+	Task-based systems are comprised of 3 components:
+
+	- Natural Language Understanding (NLU)
+
+		Understand and interpret user input text and captures syntactic representation and semantic interpretation.
+
+	- Dialogue Manager (DM)
+
+		Investigates the context and returns a reasonable semantic-related response.
+
+	- Natural Language Generation (NLG)
+
+		Produces an output text based on the response from DM. 
+
+	General pipeline: (1) NLU transforms the user's input to some dialogue element. (2) DM processes these dialogue element and provides suitable response. (3) NLG takes response and generates output response.
+
+2. Non-task-based Systems
+
+	The goal is to create a machine with the ability to have a natural conversation with humans. There are 2 types of chatbots, (1) retrieval-based methods, and (2) generative methods. 
+
+	1. Retrieval-based method
+
+		A type of search problem that uses IR techniques to select an appropriate response. Employs *Single-turn Response Matching* or *Multi-turn Response Matching*. The first type is when we only use the query input to select the appropriate response. The latter is when we take in the current query and previous messages as the input to retrieve a suitable response. Retrieval-based methods can produce a more concise, fluent, and accurate response but are limited in the variety of responses it can provide. 
+
+	2. Generative method
+
+		New responses are produced from scratch based on the training model. Generative models are trained to learn and imitate human conversations by training them on a large corpora of conversations. Generative models have the advantage of being able to produce responses that are not in the training corpus. However, they can be prone to grammatical and conceptual errors. 
+
+		How can generative models generate responses it has never seen? To answer this question, we must ask these fundamental questions: (1) What are the core characteristics of a natural conversation? (2) How can these characteristics be measured? (3) How can we incorporate this knowledge in a machine?
